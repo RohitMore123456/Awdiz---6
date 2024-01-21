@@ -1,65 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17</title>
 </head>
 
 <body>
-    <input />
-    <textarea rows="10" cols="10"></textarea>
 
-    <button onclick="alert('You have clicked')">Click me</button>
+    <!-- <div style="border: 2px solid red; display: flex; flex-direction: row; ">
+        <div style="border: 2px solid red; height: 200px ; width: 33%">1</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">2</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">3</div>
+    </div>
 
-    <form>
-        <fieldset>
-            <legend>Newsletter</legend>
-            <label>Subscribe our Newsletter</label><br />
-            <input type="email" /><br />
-            <input type="submit" />
-        </fieldset>
-    </form>
+    <div style="border: 2px solid red; display: flex; flex-direction:column ; ">
+        <div style="border: 2px solid red; height: 200px ; width: 33%">1</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">2</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">3</div>
+    </div> 
 
+    <div
+        style="border: 2px solid red; display: flex; flex-direction:row-reverse ; font-size: 50px; text-align: center; ">
+        <div style="border: 2px solid red; height: 200px ; width: 33%">1</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">2</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">3</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">4</div>
+    </div>
 
-    <input value="dragonempp" readonly />
+    <div
+        style="border: 2px solid red; display: flex; flex-direction:column-reverse ; font-size: 50px; text-align: center; ">
+        <div style="border: 2px solid red; height: 200px ; width: 33%">1</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">2</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">3</div>
+        <div style="border: 2px solid red; height: 200px ; width: 33%">4</div>
+    </div>
 
-    <input value="dragonempp" disabled />
+    <div style="border: 2px solid red; display: flex; flex-wrap: wrap; font-size: 50px; text-align: center; ">
+        <div style="border: 2px solid red; height: 200px ; width: 24%">1</div>
+        <div style="border: 2px solid red; height: 200px ; width: 24%">2</div>
+        <div style="border: 2px solid red; height: 200px ; width: 24%">3</div>
+        <div style="border: 2px solid red; height: 200px ; width: 24%">4</div>
+    </div>
 
-    <input type="text" />
-    <input type="text" size="50" />
+     <div style="border: 2px solid red; display: flex; flex-wrap: wrap-reverse; font-size: 50px; text-align: center; ">
+        <div style="border: 2px solid red; height: 200px ; width: 24%">1</div>
+        <div style="border: 2px solid red; height: 200px ; width: 24%">2</div>
+        <div style="border: 2px solid red; height: 200px ; width: 24%">3</div>
+        <div style="border: 2px solid red; height: 200px ; width: 24%">4</div>
+    </div> 
 
-    <input maxlength="2" />
+    <div
+        style="border: 2px solid red; display: flex; justify-content: space-between; flex-wrap: wrap; font-size: 50px; text-align: center; ">
+        <div style="border: 2px solid black; height: 200px ; width: 22%">1</div>
+        <div style="border: 2px solid black; height: 200px ; width: 22%">2</div>
+        <div style="border: 2px solid black; height: 200px ; width: 22%">3</div>
+        <div style="border: 2px solid black; height: 200px ; width: 22%">4</div>
+    </div>
 
-    <form>
-        <input required type="number" max="30" min="0" /><br />
-        <input type="submit" />
-    </form>
+    <div
+        style="border: 2px solid red; display: flex; justify-content: space-evenly; flex-wrap: wrap; font-size: 50px; text-align: center; ">
+        <div style="border: 2px solid black; height: 200px ; width: 22%">1</div>
+        <div style="border: 2px solid black; height: 200px ; width: 22%">2</div>
+        <div style="border: 2px solid black; height: 200px ; width: 22%">3</div>
+        <div style="border: 2px solid black; height: 200px ; width: 22%">4</div>
+    </div>
 
-    <input type="text" pattern="\w{3,16}" />
+    <div
+        style="border: 2px solid red; display: flex; justify-content: space-around; flex-wrap: wrap; font-size: 50px; text-align: center; ">
+        <div style="border: 2px solid black; height: 200px ; width: 22%">1</div>
+        <div style="border: 2px solid black; height: 200px ; width: 22%">2</div>
+        <div style="border: 2px solid black; height: 200px ; width: 22%">3</div>
+        <div style="border: 2px solid black; height: 200px ; width: 22%">4</div>
+    </div>
+    -->
 
-    <input type="text" required />
-    <button>Submit</button>
-
-
-    <input type="email" autofocus /><br />
-    <input type="password" />
-    <form>
-        <input type="text" id="uname" name="name" required size="45" pattern="[a-z]{4,8}"
-            title="4 to 8 lowercase letters" />
-        <input type="submit" />
-    </form>
-
-
-    <form action="http://localhost:8000/api/v1/register">
-        <input /><br />
-        <input type="submit" />
-    </form>
-    <form>
-        <input /><br />
-        <input type="submit" />
-    </form>
 
 </body>
-
 
 </html>
