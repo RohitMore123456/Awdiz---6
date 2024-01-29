@@ -9,17 +9,28 @@
             margin: 0; padding: 0; font-family: news 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         
-        #Top {border: 2px solid black; width: 100%; height: 80px; position: fixed; display: flex;}
+        #Top {border: 2px solid black; width: 100%; height: 80px; object-position: fixed; display: flex; border: none;}
 
-        #Logo {border: 1px solid orangered; height: 76px; width: 100px; margin-left: 5px; }
+        #Logo {border: 1px solid orangered; height: 76px; width: 100px; margin-left: 30px; padding-top: 25px; border: none; }
 
-        #Navs {border: 1px solid orangered; height: auto; width: 450px; margin-left: 75px; display: flex; padding-top: 31px; justify-content: space-evenly; font-weight: bolder;}
+        #Navs {border: 1px solid orangered; height: auto; width: 450px; margin-left: 75px; display: flex; padding-top: 31px; justify-content: space-evenly; font-weight: bolder; border: none;}
 
-        #Search {border: 1px solid orangered; height: auto; width: 450px; margin-left: 75px;}
+        #Search {border: 1px solid orangered; height: auto; width: 450px; margin-left: 75px; border: none;}
 
         #ColorBar {border: 1px solid green; height: 35px; width: 400px; margin-left: 24px; margin-top: 20px; background-color: #ecf0f1; border: none;} 
 
-        #Navigation {border: 1px solid orangered; height: auto; width: 275px; margin-left: 75px;}
+        #Navigation {border: 1px solid orangered; height: auto; width: 275px; margin-left: 50px; border: none;}
+
+        #Top2 {border: dashed red 2px; margin-top: 15px; height: 600px; margin-left: 20px;border: none;}
+
+        #Filters-H {border: dashed black 2px; height: 40px; margin-top: 20px; display: flex; justify-content: space-between; border: none;}
+
+        #Sort {border: dashed green 2px; width: 20%; height: 460px; border: none;}
+
+        #Pictures {border: 2px dashed orange; height: 472px; margin-left: 310px; margin-top: -480px; border: none;}
+
+        .Pictures1 { display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-left: -325px; padding-left: 325px; padding-top: 20px; border: none;
+            }
 
 
     </style>
@@ -27,7 +38,7 @@
 <body>
     <div id="Top">
         <div id="Logo">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.Q3yFeXPyjukMAlgfm44R8AHaEK&pid=Api&P=0&h=180" style="height: 74px; width: 98px;">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Q3yFeXPyjukMAlgfm44R8AHaEK&pid=Api&P=0&h=180" style="height: 40px; width: 70px;">
         </div>
         <div id="Navs">
             <div>Men</div>
@@ -43,6 +54,110 @@
 
             </div>
         </div>
-        <div id="Navigation"></div>
+        <div id="Navigation">
+            <i class="fa-solid fa-user" style="margin-left: 180px; padding-top: 24px;"></i>
+            <p style="margin-left: 170px;">Profile</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-heart" style="padding-left: 20px; padding-top: 24px;"></i>
+            <p style="margin-right: 50px;">Wishlist</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-bag-shopping" style="padding-right: 50px; padding-top: 24px;" ></i>
+            <p style="margin-left: -5px;">Bag</p>
+        </div>
+    </div>
+
+    <div id="Top2">
+        <div id="Subdivision">
+            <p>Home / Clothing / Shirts / <b>Casual Shirts for Men</b></p>
+            <P style="padding-top: 15px;"><b>Casual Shirts for Men</b> - 15000 items</P>
+        </div>
+        <div id="Filters-H">
+            <div style="padding-top: 10px;"><b>FILTERS</b></div>
+            <div style="display: flex; padding-top: 10px;">
+                <p>Add-Ons</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <p style="padding-left: 20px;">Bundles</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <p style="padding-left: 20px;">Collar</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <p style="padding-left: 20px;">Country of Origin</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <p style="padding-left: 20px;">Fabric</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <p style="padding-left: 20px;">Fit</p>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div style="display: flex; padding-top: 10px;">
+                <p>Sort by : <b>Recommended</b></p>
+                <i style="padding-left: 50px;" class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+        <div id="Sort" style="padding-top: 20px;">
+            <div style="display: flex;">
+                <p style="font-weight: bolder;"><b>BRAND</b></p>
+                <i style="padding-top: 4px; padding-left: 200px;" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div style="padding-top: 10px; padding-left: 5px;">
+                <P><input type="checkbox">Allensolly</P>
+                <P><input type="checkbox">Louis Phillipe</P>
+                <P><input type="checkbox">Peter England</P>
+                <P><input type="checkbox">Park Avenue</P>
+                <P><input type="checkbox">Van Heusen</P>
+                <P><input type="checkbox">U.S Polo</P>
+            </div>
+            <div style="display: flex; padding-top: 10px;">
+                <p style="font-weight: bolder;"><b>Color</b></p>
+                <i style="padding-top: 4px; padding-left: 220px;" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div style="padding-top: 10px; padding-left: 5px;">
+                <P><input type="checkbox">Magenta</P>
+                <P><input type="checkbox">Cyan</P>
+                <P><input type="checkbox">Light Green</P>
+                <P><input type="checkbox">Yellow</P>
+                <P><input type="checkbox">White</P>
+                <P><input type="checkbox">Sky Blue</P>
+            </div>
+            <div style="display: flex; padding-top: 10px;">
+                <p style="font-weight: bolder;"><b>Price Range</b></p>
+                <i style="padding-top: 4px; padding-left: 175px;" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div style="padding-top: 10px; padding-left: 5px;">
+                <P><input type="checkbox">Rs 850 - 1250</P>
+                <P><input type="checkbox">Rs 1250 - 1750</P>
+                <P><input type="checkbox">Rs 1750 - 2250</P>
+                <P><input type="checkbox">Rs 2250 - 3000</P>
+                <P><input type="checkbox">Rs 3000 & above</P>
+            </div>
+        </div>
+        <div id="Pictures">
+            <div class="Pictures1">
+                <div style="border: 2px solid grey; width: 200px;">
+                    <img style="height: 350px; width: 100%;" src="https://m.media-amazon.com/images/I/91eY68L5j9L._AC_UL480_FMwebp_QL65_.jpg">
+                    <p>Allen Solly</p>
+                    <p>Men Regular Fit Polo T-shirt</p>
+                    <p>Rs 799 <a style="text-decoration: line-through;font-size: smaller;">MRP 899</a><a style="color: red;"> (Rs 100 off)</a></p>
+                </div>
+                <div style="border: 2px solid grey; width: 200px;">
+                    <img style="height: 350px; width: 100%;" src="https://m.media-amazon.com/images/I/71YkSSLzCmL._AC_UL480_FMwebp_QL65_.jpg">
+                    <p>U.S POLO ASSN.</p>
+                    <p>Men Regular Fit Polo T-shirt</p>
+                    <p>Rs 1099 <a style="text-decoration: line-through;font-size: smaller;">MRP 1299</a><a style="color: red;"> (Rs 200 off)</a></p>
+                </div>
+                <div style="border: 2px solid grey; width: 200px;">
+                    <img style="height: 350px; width: 100%;" src="https://m.media-amazon.com/images/I/51RO-o-6hmL._AC_UL480_FMwebp_QL65_.jpg">
+                    <p>Peter England</p>
+                    <p>Men Regular Fit Polo T-shirt</p>
+                    <p>Rs 560 <a style="text-decoration: line-through;font-size: smaller;">MRP 899</a><a style="color: red;"> (38% Off)</a></p>
+                </div>
+                <div style="border: 2px solid grey; width: 200px;">
+                    <img style="height: 350px; width: 100%;" src="https://m.media-amazon.com/images/I/61DRzowxceL._AC_UL480_FMwebp_QL65_.jpg">
+                    <p>Park Avenue</p>
+                    <p>Men Regular Fit Polo T-shirt</p>
+                    <p>Rs 645 <a style="text-decoration: line-through;font-size: smaller;">MRP 1499</a><a style="color: red;"> (57% Off)</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
